@@ -20,6 +20,9 @@ f.close()
 # for every_text in the_text:
 #     print every_text
 
+
+#用sub实现翻页的功能
+
 for i in range(2, total_page+1):
     new_link = re.sub('pageNum=\d+', 'pageNum=%d' % i, old_url, re.S)
     print new_link
